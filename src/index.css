@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-deep-olive: #4F6F00;
+  --color-olive-green: #6B7F1A;
+  --color-sage-green: #DDE8B2;
+  --color-cream-bg: #FAF7EF;
+  --color-card-white: #FFFFFF;
+  --color-warm-peach: #FFE7DD;
+  --color-soft-gray: #EEF0EA;
+  --color-text-dark: #2A241A;
+  
+  --font-gmarket: "Gmarket Sans", "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/*
+  TODO: Add actual Gmarket Sans font files to /public/fonts before deployment.
+*/
+@font-face {
+  font-family: "Gmarket Sans";
+  src: url("/fonts/GmarketSansTTFMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gmarket Sans";
+  src: url("/fonts/GmarketSansTTFBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+#root,
+.app,
+.app-shell,
+.mobile-app,
+.screen,
+.screen *,
+button,
+input,
+select,
+textarea {
+  font-family: "Gmarket Sans", "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+body {
+  background-color: #FAF7EF; /* Cream Background */
+  color: #2A241A; /* Text Dark */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Material Icons Link or setup through standard SVG or loading them */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* Custom glass effect or shadows */
+.card-shadow {
+  box-shadow: 0 8px 24px rgba(79, 111, 0, 0.05);
+}
+.card-shadow-sm {
+  box-shadow: 0 4px 12px rgba(79, 111, 0, 0.03);
+}
+.hero-meal-card {
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
